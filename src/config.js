@@ -9,6 +9,6 @@ export const config ={
     // database: process.env.DB_DATABASE || 'indoor'
     host: "localhost",
     user: "root",
-    password: "1505",
-    database: "domotica",
+    password: "",
+    database: "devices",
 }
