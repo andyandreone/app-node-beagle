@@ -7,7 +7,7 @@ export const config ={
     // user: process.env.DB_USER || 'root',
     // password: process.env.DB_PASSWORD || '',
     // database: process.env.DB_DATABASE || 'indoor'
-    host: "localhost",
+    host: "127.0.0.1",
     user: "root",
     password: "",
     database: "devices",

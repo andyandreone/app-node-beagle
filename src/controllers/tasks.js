@@ -1,7 +1,7 @@
 import {connect} from '../database.js'
 
 export const getHome = async (req,res) => {
-    res.send("WELCOME TO AZN DOMOTICA");
+    res.send("WELCOME TO SUNDAY INTELLIGENCE");
  }
  
 
