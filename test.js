@@ -1,4 +1,6 @@
-const b = require('bonescript');
+import b from 'bonescript';
+
+//const b = require('bonescript');
 
 const leds = ["USR0", "USR1", "USR2", "USR3", "P9_15"];
 
