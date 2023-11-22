@@ -6,8 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon src/index.js",
-    "start": "node build/index.js",
-    "watch": "babel ./src --out-dir ./build"
+    "start": "node src/index.js"
   },
   "keywords": [],
   "author": "",
