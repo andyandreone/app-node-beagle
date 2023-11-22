@@ -9,6 +9,6 @@ export const config ={
     // database: process.env.DB_DATABASE || 'indoor'
     host: "127.0.0.1",
     user: "root",
-    password: "",
+    password: "temppwd",
     database: "devices",
 }
