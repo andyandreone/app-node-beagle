@@ -63,7 +63,7 @@ export const updateDataCurtain = async (req,res) => {
 
 export const getDatosLights = async (req,res) => {
     const connection = await connect()
-    const [rows] = await connection.query('SELECT * FROM device')
+    const [rows] = await connection.query('SELECT * FROM device WHERE category = light')
     res.json(rows);
  }
  
