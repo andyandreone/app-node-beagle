@@ -1,6 +1,9 @@
 import { Router } from "express";
 import {getDatosLights,  getDataLight, deleteDataLight, updateDataLight,getHome, getCountLights, saveDeviceLight} from "../controllers/tasks.js";
-import {getDatosCurtains,  getDataCurtain, deleteDataCurtain, updateDataCurtain, getCountCurtains, saveDeviceCurtain} from "../controllers/tasks.js";
+import {getDatosCurtains} from "../controllers/tasks.js";
+import {getDatosAir} from "../controllers/tasks.js";
+import {getDatosPlug} from "../controllers/tasks.js";
+import {getDatosRooms} from "../controllers/tasks.js";
 
 const router = Router()
 
@@ -9,7 +12,7 @@ router.get('/',getHome);
 
 //LIGHTS
 
-router.get('/lights/datos', getDatosLights);
+router.get('/devices/lights', getDatosLights);
 
 router.get('/lights/count', getCountLights);
 
@@ -25,16 +28,15 @@ router.put('/lights/data/:id', updateDataLight)
 
 router.get('/curtains/datos', getDatosCurtains);
 
-router.get('/curtains/count', getCountCurtains);
+//AIR
+router.get('/devices/air', getDatosAir);
 
-router.get('/curtains/data/:id',getDataCurtain);
 
-router.post('/curtains', saveDeviceCurtain);
+//TOMACORRIENTE
+router.get('/devices/plug', getDatosPlug);
 
-router.delete('/curtains/data/:id', deleteDataCurtain)
-
-router.put('/curtains/data/:id', updateDataCurtain)
-
+//TOMACORRIENTE
+router.get('/devices/rooms/:room', getDatosRooms);
 
 export default router
 
